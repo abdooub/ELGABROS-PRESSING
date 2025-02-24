@@ -329,7 +329,11 @@ if (menu.style.width === "100%") {
 	menu.style.width = "100%";
 }
 }
-
+document.querySelectorAll('.overlay-content a').forEach(item => {
+    item.addEventListener('click', () => {
+        document.getElementById("overlayMenu").style.width = "0";
+    });
+});
 </script>
 <style>
 	body {
